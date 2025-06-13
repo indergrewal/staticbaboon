@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static Baboon - Contact & Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <h1 class="logo"><a href="index.html">Static Baboon</a></h1>
+            <nav class="site-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html" class="book-now">Book Now</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section>
+            <h2>Book an Appointment</h2>
+            <form id="booking-form">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="contact">Contact Info</label>
+                <input type="text" id="contact" name="contact" required>
+
+                <label for="service">Service Type</label>
+                <select id="service" name="service" required>
+                    <option value="" disabled selected>Select a service</option>
+                    <option value="web">Web Development</option>
+                    <option value="design">Design</option>
+                    <option value="consulting">Consulting</option>
+                </select>
+
+                <label for="date">Preferred Date</label>
+                <input type="date" id="date" name="date" required>
+
+                <button type="submit" class="btn-primary">Submit</button>
+            </form>
+        </section>
+
+        <section class="contact-info">
+            <h2>Contact Information</h2>
+            <p>Email: <a href="mailto:info@staticbaboon.example">info@staticbaboon.example</a></p>
+            <p>Phone: <a href="tel:+123456789">+1 (234) 567-89</a></p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
